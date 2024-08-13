@@ -6,9 +6,33 @@
     <link href="index.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>羿鈞科技有限公司</title>
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 </head>
-<body style="background: transparent linear-gradient(360deg, #00418E 0%, #FFF 100%) 0% 0% no-repeat;">
+<body style="background-image: url(images/bg.jpg);">
     <!-- nav -->
     <div class="nav">
         <div class="nav-box">
@@ -40,81 +64,28 @@
     <div class="sub-title-box bottombox-padding p-page">
         <div class="divid-box">
             <div class="divid" data-aos="flip-left" data-aos-duration="500" data-aos-delay="400"></div>
-        </div>     
+        </div>   
         <div class="sub-title" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
-            <span style="color: #1684CE">ActualCase</span>
-            <h2 style="color: #00418E !important">實際案例</h2>
+            <span>ActualCase</span>
+            <h2 style="color: #fff">實際案例</h2>
         </div>
         <div class="divid-box">
             <div class="divid" data-aos="flip-right" data-aos-duration="500" data-aos-delay="400"></div>
-        </div>   
+        </div>
     </div>
 
-    <div class="actual-case-box bottombox-padding">
-        <div class="actual-case-smbox actual-case-smbox2" data-index="1" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
-            <a href="case-pages.html">
-                <img class="actual-case-img1" src="images/p2/company-1.jpg">
-            </a>
-        </div>
-        
-        <div class="actual-case-smbox actual-case-smbox2" data-index="2" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
-            <a href="case-pages.html">
-                <img class="actual-case-img2" src="images/p2/company-2.jpg">
-            </a>
-        </div>
-
-        <div class="actual-case-smbox actual-case-smbox2" data-index="3" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
-            <a href="case-pages.html">
-                <img class="actual-case-img3" src="images/p2/company-3.jpg">
-            </a>
-        </div>
-
-        <div class="actual-case-smbox actual-case-smbox2" data-index="4" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
-            <a href="case-pages.html">
-                <img class="actual-case-img4" src="images/p2/company-4.jpg">
-            </a>
-        </div>
-
-        <div class="actual-case-smbox actual-case-smbox2" data-index="5" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
-            <a href="case-pages.html">
-                <img class="actual-case-img5" src="images/p2/company-5.jpg">
-            </a>
-        </div>
-
-        <div class="actual-case-smbox actual-case-smbox2" data-index="6" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
-            <a href="case-pages.html">
-                <img class="actual-case-img6" src="images/p2/company-6.jpg">
-            </a>
-        </div>
-
-        <div class="actual-case-smbox actual-case-smbox2" data-index="7" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
-            <a href="case-pages.html">
-                <img class="actual-case-img7" src="images/p2/company-7.jpg">
-            </a>
-        </div>
-
-        <div class="actual-case-smbox actual-case-smbox2" data-index="8" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
-            <a href="case-pages.html">
-                <img class="actual-case-img8" src="images/p2/company-8.jpg">
-            </a>
-        </div>
-
-        <div class="actual-case-smbox actual-case-smbox2" data-index="9" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="500">
-            <a href="case-pages.html">
-                <img class="actual-case-img9" src="images/p2/company-9.jpg">
-            </a>
-        </div>
-
-        <div class="actual-case-smbox actual-case-smbox2" data-index="10" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="600">
-            <a href="case-pages.html">
-                <img class="actual-case-img10" src="images/p2/company-10.jpg">
-            </a>
-        </div>
-
-        <div class="actual-case-smbox actual-case-smbox2" data-index="11" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="700">
-            <a href="case-pages.html">
-                <img class="actual-case-img11" src="images/p2/company-11.jpg">
-            </a>
+    <div class="about-us-box bottombox-padding" style="position: relative;"
+    data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/p2/case-pic01.jpg"></div>
+                <div class="swiper-slide"><img src="images/p2/case-pic02.jpg"></div>
+                <div class="swiper-slide"><img src="images/p2/case-pic03.jpg"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
 
@@ -150,9 +121,26 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
     <script>
         AOS.init();
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
     </script>
 </body>
 </html>
