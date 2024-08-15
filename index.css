@@ -19,7 +19,7 @@ p {
 }
 
 .bottombox-padding {
-    padding: 0px 50px;
+    padding: 0px 40px;
  }
 
 /* nav */
@@ -194,13 +194,14 @@ p {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    padding: 30px;
+    padding: 30px 20px;
     padding-bottom: 14px;
     width: 100%;
     background-color: rgba(35, 40, 84, 0.8);
     border: 1px solid #fff;
     border-radius: 30px;
     box-shadow: 0px 0px 5px #ffffff;
+    text-align: center;
 }
 
 .introduce-smbox img {
@@ -729,6 +730,10 @@ footer .copy-right {
 }
 
 @media screen and (min-width: 1000px) {
+    p {
+        font-size: 18px;
+    }
+
     .bottombox-padding {
         padding: 0px 15%;
     }
@@ -829,6 +834,16 @@ footer .copy-right {
     /* actual-case */
     .more-case-box {
         margin-bottom: 150px;
+    }
+
+    /* contact-us-box */
+    .contact-us-box .text-box{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .contact-us-box p{
+        font-size: 16px;
     }
 
     /* service-items */
